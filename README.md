@@ -17,8 +17,20 @@ No apps, no subscriptions. Just markdown files, a terminal, and an AI that pushe
 
 ## Install
 
+**From GitHub:**
 ```bash
-claude plugin install life-system
+claude plugin install https://github.com/ilumin/life-system
+```
+
+**From a local clone:**
+```bash
+git clone https://github.com/ilumin/life-system.git
+claude plugin install ./life-system
+```
+
+**For development/testing (no install, loads once):**
+```bash
+claude --plugin-dir ./life-system
 ```
 
 Then run setup to choose where your files live:
