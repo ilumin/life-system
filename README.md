@@ -17,18 +17,24 @@ No apps, no subscriptions. Just markdown files, a terminal, and an AI that pushe
 
 ## Install
 
-**From GitHub:**
+**From GitHub (2 steps):**
 ```bash
-claude plugin install https://github.com/ilumin/life-system
+# Step 1: Add repo as a marketplace
+/plugin marketplace add ilumin/life-system
+
+# Step 2: Install the plugin
+/plugin install ls@ilumin-life-system
 ```
 
 **From a local clone:**
 ```bash
 git clone https://github.com/ilumin/life-system.git
-claude plugin install ./life-system
+# Add local path as marketplace, then install
+/plugin marketplace add ./life-system
+/plugin install ls@life-system
 ```
 
-**For development/testing (no install, loads once):**
+**For development/testing (session only, no install):**
 ```bash
 claude --plugin-dir ./life-system
 ```
