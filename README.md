@@ -24,7 +24,7 @@ claude plugin install life-system
 Then run setup to choose where your files live:
 
 ```
-/life-system:setup
+/ls:setup
 ```
 
 This will:
@@ -36,37 +36,37 @@ This will:
 
 | Skill | What it does |
 |-------|-------------|
-| `/life-system:setup` | One-time setup — choose directory, scaffold files |
-| `/life-system:morning` | Daily planning — review yesterday, set today's priorities, alignment check |
-| `/life-system:evening` | End-of-day reflection — Franklin's evening question, carry forward |
-| `/life-system:log` | Quick-add a timestamped entry to today's journal |
-| `/life-system:decide` | Create a structured decision record |
-| `/life-system:person` | Create a person note (with optional web research) |
-| `/life-system:weekly-review` | Weekly patterns, goal progress, next week priorities |
+| `/ls:setup` | One-time setup — choose directory, scaffold files |
+| `/ls:morning` | Daily planning — review yesterday, set today's priorities, alignment check |
+| `/ls:evening` | End-of-day reflection — Franklin's evening question, carry forward |
+| `/ls:log` | Quick-add a timestamped entry to today's journal |
+| `/ls:decide` | Create a structured decision record |
+| `/ls:person` | Create a person note (with optional web research) |
+| `/ls:weekly-review` | Weekly patterns, goal progress, next week priorities |
 
 ## How It Works
 
 ### Morning
-Say "morning" or run `/life-system:morning`. Claude will:
+Say "morning" or run `/ls:morning`. Claude will:
 - Review yesterday's journal
 - Create today's journal from the template
 - Ask Franklin's question: "What good shall I do this day?"
 - Challenge your priorities against your annual goals
 
 ### During the Day
-- `/life-system:log Fixed the auth bug` — timestamped entry added to today's journal
-- `/life-system:decide` — think through a significant decision
-- `/life-system:person Jane Smith` — research someone before a meeting
+- `/ls:log Fixed the auth bug` — timestamped entry added to today's journal
+- `/ls:decide` — think through a significant decision
+- `/ls:person Jane Smith` — research someone before a meeting
 - Claude auto-logs important moments when working with you
 
 ### Evening
-Run `/life-system:evening`. Claude will:
+Run `/ls:evening`. Claude will:
 - Summarize accomplishments vs. morning plan
 - Ask Franklin's question: "What good have I done today?"
 - Carry forward incomplete items
 
 ### Weekly
-Run `/life-system:weekly-review` for pattern analysis, goal progress, and next-week priorities.
+Run `/ls:weekly-review` for pattern analysis, goal progress, and next-week priorities.
 
 ## Directory Structure
 
@@ -149,6 +149,6 @@ Add QMD as an MCP server in `~/.claude/settings.json`:
 Everything is a starting point. Delete what doesn't resonate, add what does:
 
 - Don't care about Franklin's questions? Remove them from the template.
-- Want weekly reviews? Run `/life-system:weekly-review`.
+- Want weekly reviews? Run `/ls:weekly-review`.
 - Have a different morning routine? Update `reference/habits.md`.
 - The skills are plain markdown — edit them to match how you think.

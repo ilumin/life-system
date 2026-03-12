@@ -33,7 +33,7 @@ All life system files are stored in the user's chosen directory, configured at `
 { "base_dir": "/path/to/life-system" }
 ```
 
-Read this config at the start of any life-system operation. If it doesn't exist, tell the user to run `/life-system:setup`.
+Read this config at the start of any life-system operation. If it doesn't exist, tell the user to run `/ls:setup`.
 
 ### File Locations (relative to base_dir)
 

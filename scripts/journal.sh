@@ -5,7 +5,7 @@
 # Backfills any missing days with calendar events and carried-over todos
 #
 # Setup:
-#   1. Run /life-system:setup in Claude Code to configure your directory
+#   1. Run /ls:setup in Claude Code to configure your directory
 #   2. chmod +x this file
 #   3. Add to your shell: alias jrn='~/.scripts/journal.sh'
 #   4. (Optional) Install icalBuddy for calendar integration: brew install ical-buddy
@@ -14,7 +14,7 @@
 CONFIG_FILE="$HOME/.config/life-system/config.json"
 
 if [ ! -f "$CONFIG_FILE" ]; then
-    echo "Error: Life system not configured. Run /life-system:setup in Claude Code first."
+    echo "Error: Life system not configured. Run /ls:setup in Claude Code first."
     exit 1
 fi
 

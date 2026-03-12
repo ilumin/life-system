@@ -12,7 +12,7 @@ Help the user think through a significant decision and capture it as a structure
 
 ## Step 0: Load Config
 
-Read `~/.config/life-system/config.json` to get the user's base directory. If the config file doesn't exist, tell the user to run `/life-system:setup` first and stop.
+Read `~/.config/life-system/config.json` to get the user's base directory. If the config file doesn't exist, tell the user to run `/ls:setup` first and stop.
 
 ## Step 1: Get the Decision
 

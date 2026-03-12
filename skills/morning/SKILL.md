@@ -21,7 +21,7 @@ Read `~/.config/life-system/config.json` to get the user's base directory.
 { "base_dir": "/path/to/life-system" }
 ```
 
-If the config file doesn't exist, tell the user to run `/life-system:setup` first and stop.
+If the config file doesn't exist, tell the user to run `/ls:setup` first and stop.
 
 All paths below use `BASE_DIR` from this config. For example, if base_dir is `/home/alice/Documents/life-system`, then the journal path is `/home/alice/Documents/life-system/journal/YYYY/MM/YYYY-MM-DD.md`.
 

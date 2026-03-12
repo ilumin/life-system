@@ -62,5 +62,5 @@ Read each template from `${CLAUDE_PLUGIN_ROOT}/templates/` and write it to the d
 
 Tell the user setup is complete. Show them:
 - Where their files live
-- Available skills: `/life-system:morning`, `/life-system:evening`, `/life-system:log`, `/life-system:decide`, `/life-system:person`, `/life-system:weekly-review`
-- Suggest running `/life-system:morning` to start their first day
+- Available skills: `/ls:morning`, `/ls:evening`, `/ls:log`, `/ls:decide`, `/ls:person`, `/ls:weekly-review`
+- Suggest running `/ls:morning` to start their first day
